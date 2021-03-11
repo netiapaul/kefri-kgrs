@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 511.996 511.996" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><script>
+        (function() {
+            // If GPC on, set DOM property to true if not already true
+            if (true) {
+                if (navigator.globalPrivacyControl) return
+                Object.defineProperty(navigator, 'globalPrivacyControl', {
+                    value: true,
+                    enumerable: true
+                })
+            } else {
+                // If GPC off, set DOM property prototype to false so it may be overwritten
+                // with a true value by user agent or other extensions
+                if (typeof navigator.globalPrivacyControl !== "undefined") return
+                Object.defineProperty(Object.getPrototypeOf(navigator), 'globalPrivacyControl', {
+                    value: false,
+                    enumerable: true
+                })
+            }
+            // Remove script tag after execution
+            document.currentScript.parentElement.removeChild(document.currentScript)
+        })()
+        </script><g xmlns="http://www.w3.org/2000/svg"><path d="m470.844 304.415c-.554-.559-55.461-56.442-55.461-109.418 0-55.588-23.882-108.707-65.523-145.736-41.5-36.903-96.398-54.535-152.975-47.879-85.154 10.018-155.733 77.531-169.036 162.24-10.762 68.531 12.995 109.831 38.146 153.555 24.28 42.209 49.386 85.856 49.387 162.867v31.953h180v-62h105v-94.853l86.423-34.662zm-100.461 30.434v85.147h-105v62h-120v-1.953c0-85.023-28.36-134.326-53.382-177.825-24.379-42.382-43.635-75.857-34.514-133.942 11.151-71.012 71.25-128.671 142.903-137.101 47.835-5.631 93.834 8.757 129.534 40.503 35.245 31.341 55.459 76.289 55.459 123.317 0 46.074 30.522 90.695 49.507 113.992z" fill="#527d24" data-original="#000000" style="" class=""/><path d="m280.383 119.996c-3.409 0-30.762 1.114-60 35.142-29.238-34.027-56.591-35.142-60-35.142-33.084 0-60 26.916-60 60s26.916 60 60 60c3.409 0 30.762-1.114 60-35.142 29.238 34.027 56.591 35.142 60 35.142 33.084 0 60-26.916 60-60s-26.916-60-60-60zm-120.213 89.995c-16.444-.116-29.787-13.524-29.787-29.995s13.343-29.879 29.787-29.995c2.097.171 20.545 2.466 41.762 29.995-21.217 27.529-39.666 29.824-41.762 29.995zm120.426 0c-2.097-.171-20.545-2.466-41.762-29.995 21.217-27.529 39.665-29.823 41.762-29.995 16.444.116 29.787 13.524 29.787 29.995s-13.344 29.879-29.787 29.995z" fill="#527d24" data-original="#000000" style="" class=""/></g></g></svg>

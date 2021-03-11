@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/*********** Header ************/
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+header .navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fafafa;
+}
+
+header {
+  background-image: url("../../assets/images/graduates.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75vh;
+  min-height: 20rem;
+}
+
+/*********** Footer ***********/
+.footer {
+  background-color: #202020 !important;
+  color: white !important;
+  padding: 2rem !important;
+}
+
+.footer-item {
+  list-style: none !important;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.footer-item:hover {
+  color: black !important;
+  cursor: pointer !important;
+}
+
+.footer-list {
+  -webkit-padding-start: 0% !important;
+          padding-inline-start: 0% !important;
+}
+
+/*********** Vision ***********/
+.vision h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -.01em;
+  line-height: 1.4;
+}
+
+/*********** Mission ***********/
+.mission h3 {
+  font-size: 1.125rem;
+  letter-spacing: -.01em;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.mission .check-icon {
+  font-weight: normal;
+  margin-right: 1rem;
+}
+
+.details {
+  color: #506690 !important;
+}
+
+/*********** Graduate School ***********/
+.graduate_school .font-size-sm {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -.03em;
+}
+
+.graduate_school .font-weight-bold {
+  font-weight: 700 !important;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #537D23;
+}
+
+.tab-content p {
+  text-align: justify;
+}
+
+.nav-link.active {
+  color: #994708 !important;
+  border-color: #994708 !important;
+}
+
+@media screen and (max-width: 1199px) {
+  /*********** Jumbotron ***********/
+  .jumbotron {
+    position: relative;
+    padding: 10rem 2rem 0 2rem;
+  }
+  /*********** Header ***********/
+  header .overlay {
+    height: 70%;
+  }
+  header {
+    height: 70vh;
+  }
+  .navbar {
+    background-color: #212529;
+  }
+  .navbar .nav-item .nav-link {
+    color: #fafafa;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: #fff;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .dropdown-menu1 {
+    display: none;
+  }
+  .navbar .dropend:hover .dropdown-menu1 {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu, .drop {
+    font-size: .9rem !important;
+  }
+  .dropdown-menu1 {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    -webkit-transform: translate(110px, 0px);
+            transform: translate(110px, 0px);
+    left: 15%;
+    z-index: 2;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: .9rem !important;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+  }
+  .navbar {
+    background-color: transparent !important;
+  }
+  .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: .9rem !important;
+    font-weight: lighter;
+  }
+  .navbar {
+    background-color: transparent !important;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: .9rem !important;
+    font-weight: lighter;
+  }
+  .jumbotron {
+    position: relative;
+    padding: 15rem 2rem 0 2rem !important;
+  }
+}
+/*# sourceMappingURL=home.css.map */
