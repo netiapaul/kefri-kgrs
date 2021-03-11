@@ -207,5 +207,39 @@ header {
     position: relative;
     padding: 15rem 2rem 0 2rem !important;
   }
+  /********** Wrapper *********/
+  .wrapper {
+    position: relative;
+  }
+  .dashed-box {
+    position: relative;
+    background-color: lightpink;
+    z-index: 1;
+    height: 11em;
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    top: -5rem;
+  }
+  .gold-box {
+    position: absolute;
+    z-index: 3;
+    /* put .gold-box above .green-box and .dashed-box */
+    background: gold;
+    width: 80%;
+    left: 60px;
+    top: -3em;
+  }
+  .green-box {
+    position: absolute;
+    z-index: 2;
+    /* put .green-box above .dashed-box */
+    background: lightgreen;
+    width: 80%;
+    left: 20%;
+    top: 10rem;
+    height: 11em;
+    opacity: 0.9;
+  }
 }
 /*# sourceMappingURL=home.css.map */
