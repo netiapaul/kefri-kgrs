@@ -69,11 +69,20 @@ header {
 }
 
 /*********** Vision ***********/
+.vision {
+  background-color: #537D23;
+}
+
 .vision h3 {
   font-weight: 700;
   font-size: 1.125rem;
   letter-spacing: -.01em;
   line-height: 1.4;
+  color: #fafafa;
+}
+
+.vision p {
+  color: #fafafa;
 }
 
 /*********** Mission ***********/
@@ -216,16 +225,16 @@ header {
     background-color: lightpink;
     z-index: 1;
     height: 11em;
-    width: 80%;
+    width: 75%;
     margin-bottom: 1em;
     margin-top: 2em;
+    left: 6%;
     top: -5rem;
   }
   .gold-box {
     position: absolute;
     z-index: 3;
     /* put .gold-box above .green-box and .dashed-box */
-    background: gold;
     width: 80%;
     left: 60px;
     top: -3em;
@@ -235,9 +244,9 @@ header {
     z-index: 2;
     /* put .green-box above .dashed-box */
     background: lightgreen;
-    width: 80%;
+    width: 75%;
     left: 20%;
-    top: 10rem;
+    top: 5rem;
     height: 11em;
     opacity: 0.9;
   }
